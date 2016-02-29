@@ -70,6 +70,10 @@ h3 {
   font-family: 'Roboto Slab', serif;
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
 .border-between > [class*='col-']:before {
  background: #e3e3e3;
  bottom: 0;
