@@ -43,10 +43,12 @@ h3 {
 
 .about_me {
   font-family: 'Roboto Slab', serif;
-  margin: 20%;
   padding: 15px;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 15px;
 }
 
 .nav.navbar-nav.navbar-right li a {
@@ -84,6 +86,20 @@ p {
  width: 1px;
  top: 0;
 }
+
 .border-between > [class*='col-']:first-child:before {
  display: none;
 }
+
+.surf {
+  max-height: 140px;
+  border-radius: 10px;
+}
+
+.contact-title {
+  font-family: 'Goblin One', cursive;
+  margin-top: 15%;
+}
+
+
+
