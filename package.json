@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/nwimmer123/home_page/issues"
   },
-  "homepage": "https://github.com/nwimmer123/home_page#readme"
+  "homepage": "https://github.com/nwimmer123/home_page#readme",
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "nodemon": "^1.10.0"
+  }
 }
