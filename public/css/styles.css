@@ -100,9 +100,7 @@ input {
   cursor: pointer;
 }
 
-/*footer {
-  position: fixed;
-  top: 92%;
-  left: 7%;
-}*/
+footer {
+  margin: 15px 0px 15px 0px;
+}
 
