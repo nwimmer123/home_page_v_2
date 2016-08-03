@@ -1,16 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-  $('#andersen_text').hide();
+  $('#test_text').hide();
 
-  $('#andersen_pic').hover(function() {
-    $('#andersen_text').show();
-    $('#andersen_pic').hide();
-  });
-
-  $('#andersen_pic').mouseover(function() {
-    console.log("CLICKED");
-    $('#andersen_text').show();
-    $('#andersen_pic').hide();
+  $('#test_pic').hover(function () {
+    $(this).stop().animate({
+        opacity: .1
+    }, 200);
+    $('#test_text').show();
+  }, function () {
+    $(this).stop().animate({
+        opacity: 1
+    }, 500);
+    $('#test_text').hide();
   });
 
 });
