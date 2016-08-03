@@ -41,19 +41,14 @@ p {
   padding: 15px;
 }
 
-
-
 .portfolio_pic {
   max-height: 250px;
   border: medium groove #660033;
-
-
 }
 
 .portfolio_text {
   max-height: 250px;
   max-width: 350px;
-
 }
 
 footer {
@@ -67,8 +62,6 @@ footer {
 }
 
 #test_pic {
-
-
- 
-
+  max-height: 250px;
+  border: medium groove #660033;
 }
