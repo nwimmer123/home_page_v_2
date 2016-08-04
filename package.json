@@ -1,0 +1,28 @@
+{
+  "name": "home_page_v_2",
+  "version": "1.0.0",
+  "description": "my homepage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwimmer123/home_page_v_2.git"
+  },
+  "keywords": [
+    "noah",
+    "wimmer",
+    "developer",
+    "sf",
+    "bay",
+    "area"
+  ],
+  "author": "Noah Wimmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwimmer123/home_page_v_2/issues"
+  },
+  "homepage": "https://github.com/nwimmer123/home_page_v_2#readme"
+}
