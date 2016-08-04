@@ -89,12 +89,13 @@ var portfolio_items = [
   // }
 ];
 
+  db.Portfolio_Item.remove({}, function(err, portfolio_items){
 
+    db.Portfolio_Item.create(portfolio_items, function(err, portfolio_items){
+      if (err) { return console.log('ERROR', err); }
+      console.log("all items:", portfolio_items);
+      console.log("created ", portfolio_items.length, " portfolio_items");
+      process.exit();
+    });
 
-
-  db.Potfolio_Item.create(portfolio_items, function(err, portfolio_items){
-    if (err) { return console.log('ERROR', err); }
-    console.log("all items:", portfolio_items);
-    console.log("created ", portfolio_items.length, " portfolio_items");
-    process.exit();
   });

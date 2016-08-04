@@ -27,6 +27,13 @@ app.get('/', function homepage (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+//server requesting data from database/;
+// app.get('/api/portfolio_items', function portfolio_itemsIndex(req, res) {
+//   db.Portfolio_Item.find({}, function(err, books) {
+//     res.json(portfolio_items);
+//   });
+// });
+
 /**********
  * SERVER *
  **********/
