@@ -36,7 +36,7 @@ var portfolio_items = [
   other: "Git, JSON, Handlebars",
   sitelink: "https://mysterious-basin-2931.herokuapp.com",
   githublink: "https://github.com/nwimmer123/project-01",
-  },
+  }
   // {
   // description: "",
   // language: "",

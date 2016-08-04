@@ -27,12 +27,20 @@ app.get('/', function homepage (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-//server requesting data from database/;
-// app.get('/api/portfolio_items', function portfolio_itemsIndex(req, res) {
-//   db.Portfolio_Item.find({}, function(err, books) {
-//     res.json(portfolio_items);
-//   });
-// });
+app.get('/api', function api_index (req, res){
+  res.json({
+
+    endpoints: [
+      {method: "GET", path: "/api", description: "Describes available endpoints"}
+    ]
+  });
+});
+
+app.get('/api/potfolio_items', function (req, res) {
+  db.Portfolio_Item.find({}, function(err, albums) {
+    res.json(potfolio_items);
+  });
+});
 
 /**********
  * SERVER *
