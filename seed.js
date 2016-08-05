@@ -2,6 +2,8 @@ var db = require("./models");
 
 var portfolio_items = [
   {
+  textid: "0",
+  picid: "10",
   image: "/images/andersen.png",
   title: "Freelance Work",
   description: "Site for a structural engineer.",
@@ -15,6 +17,8 @@ var portfolio_items = [
   githublink: "https://github.com/nwimmer123/andersen-engineering",
   },
   {
+  textid: "1",
+  picid: "11",
   image: "/images/excel.png",
   title: "Freelance Work",
   description: "Site for an Excel consultant.",
@@ -28,6 +32,8 @@ var portfolio_items = [
   githublink: "https://github.com/nwimmer123/david-excel",
   },
   {
+  textid: "2",
+  picid: "12",
   image: "/images/read_it.png",
   title: "Read It",
   description: "Friends can share and discuss their favorites books.",

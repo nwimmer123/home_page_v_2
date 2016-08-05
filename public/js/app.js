@@ -16,19 +16,43 @@ $(document).ready(function () {
 
   //reveal info about portfolio item
 
-  $('.test_text').hide();
+  // $('.test_text').hide();
 
-  $('.test_pic').hover(function () {
-    $(this).stop().animate({
-        opacity: .1
-    }, 200);
-    $('.test_text').show();
-  }, function () {
-    $(this).stop().animate({
-        opacity: 1
-    }, 500);
-    $('.test_text').hide();
-  });
+  // $('.test_pic').hover(function () {
+  //   $(this).stop().animate({
+  //       opacity: .1
+  //   }, 200);
+  //   $('.test_text').show();
+  // }, function () {
+  //   $(this).stop().animate({
+  //       opacity: 1
+  //   }, 500);
+  //   $('.test_text').hide();
+  // });
+
+  //experimental
+
+  // var id = 0;
+  
+
+  // while (id < 3) {
+  //   $('#text' + id).hide();
+
+  //   $('#pic' + id).hover(function () {
+  //     $(this).stop().animate({
+  //         opacity: .1
+  //     }, 200);
+  //     $(textid).show();
+  //   }, function () {
+  //     $(this).stop().animate({
+  //         opacity: 1
+  //     }, 500);
+  //     $('#text' +  id).hide();
+  //   });
+  //   id ++;
+  
+
+  // };
 
   //reveal info about portfolio item for mobile
 

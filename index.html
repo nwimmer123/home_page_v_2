@@ -89,22 +89,23 @@
         </div>
 
         <p><a href="https://andersen-engineering.com/">Andersen Engineering</a></p>
-        
         <p><a href="https://github.com/nwimmer123/david-excel">GitHub Link</a></p>
 
-    </div>
+      </div>
 
     <!-- Hanlebars template bringing in info I want -->
 
-    <div class="col-sm-6"> 
-      <div class="list-group" id="portfolio_items-list">
+    
+    <div class="list-group" id="portfolio_items-list">
+
         <script id="portfolio_items-template" type="text/x-handlebars-template">
           {{#each portfolio_items}}
+          <div class="col-sm-6"> 
             <h4>{{title}}</h4>
           
-            <img src={{image}} class="portfolio_pic" "test_pic">
+            <img src={{image}} class="portfolio_container" id="pic{{@index}}">
 
-            <div class="test_text">
+            <div class="text" id="text{{@index}}">
               <p>{{description}}</p>
               <p><strong>Languages: </strong>{{language}}</p>
               <p><strong>Frameworks: </strong>{{framework}}</p>
@@ -116,10 +117,11 @@
             <p><a href={{sitelink}}>{{sitename}}</a></p>
             
             <p><a href={{githublink}}>GitHub Link</a></p>
+          </div>
+          {{/each}}
 
-            {{/each}}
         </script>
-      </div>
+      
     </div>
 
 

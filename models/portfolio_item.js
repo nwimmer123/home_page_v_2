@@ -2,6 +2,8 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var Portfolio_ItemSchema = new Schema({
+  textid: String,
+  picid: String,
   image: String,
   title: String,
   description: String,
