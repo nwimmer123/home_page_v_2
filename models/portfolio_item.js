@@ -11,6 +11,7 @@ var Portfolio_ItemSchema = new Schema({
   database: String,
   other: String,
   sitelink: String,
+  sitename: String,
   githublink: String
 });
 

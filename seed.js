@@ -11,6 +11,7 @@ var portfolio_items = [
   database: "NA",
   other: "Git, GoDaddy Hosting",
   sitelink: "https://andersen-engineering.com",
+  sitename: "Andersen Engineering",
   githublink: "https://github.com/nwimmer123/andersen-engineering",
   },
   {
@@ -23,6 +24,7 @@ var portfolio_items = [
   database: "NA",
   other: "Git, GoDaddy Hosting",
   sitelink: "https://ExcelExcelExcel.com",
+  sitename: "ExcelExcelExcel",
   githublink: "https://github.com/nwimmer123/david-excel",
   },
   {
@@ -35,12 +37,13 @@ var portfolio_items = [
   database: "Moongoose, MongoDB",
   other: "Git, JSON, Handlebars",
   sitelink: "https://mysterious-basin-2931.herokuapp.com",
+  sitename: "Read It",
   githublink: "https://github.com/nwimmer123/project-01",
   }
 
 ];
 
-  //db.Portfolio_Item.remove({}, function(err, portfolio_items){
+  
 
 
     db.Portfolio_Item.create(portfolio_items, function(err, portfolio_items){
@@ -50,4 +53,6 @@ var portfolio_items = [
       process.exit();
     });
 
-  //});
+    // db.Portfolio_Item.remove({}, function(err, portfolio_items){
+    //   process.exit();
+    // });
