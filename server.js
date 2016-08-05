@@ -30,14 +30,14 @@ app.get('/', function homepage (req, res) {
 app.get('/api', function api_index (req, res){
   res.json({
     endpoints: [
-      {method: "GET", path: "/api", description: "Describes available endpoints"}
+      {method: "GET", path: "/api", description: "portfolio_items"}
     ]
   });
 });
 
 app.get('/api/portfolio_items', function (req, res) {
-  db.Portfolio_Item.find({}, function(err, albums) {
-    res.json(potfolio_items);
+  db.Portfolio_Item.find({}, function(err, portfolio_items) {
+    res.json(portfolio_items);
   });
 });
 
