@@ -37,59 +37,11 @@ var portfolio_items = [
   sitelink: "https://mysterious-basin-2931.herokuapp.com",
   githublink: "https://github.com/nwimmer123/project-01",
   }
-  // {
-  // description: "",
-  // language: "",
-  // framework: "",
-  // library: "",
-  // database: "",
-  // other: "",
-  // sitelink: "",
-  // githublink: "",
-  // },
-  // {
-  // description: "",
-  // language: "",
-  // framework: "",
-  // library: "",
-  // database: "",
-  // other: "",
-  // sitelink: "",
-  // githublink: "",
-  // },
-  // {
-  // description: "",
-  // language: "",
-  // framework: "",
-  // library: "",
-  // database: "",
-  // other: "",
-  // sitelink: "",
-  // githublink: "",
-  // },
-  // {
-  // description: "",
-  // language: "",
-  // framework: "",
-  // library: "",
-  // database: "",
-  // other: "",
-  // sitelink: "",
-  // githublink: "",
-  // },
-  // {
-  // description: "",
-  // language: "",
-  // framework: "",
-  // library: "",
-  // database: "",
-  // other: "",
-  // sitelink: "",
-  // githublink: "",
-  // }
+
 ];
 
-  db.Portfolio_Item.remove({}, function(err, portfolio_items){
+  //db.Portfolio_Item.remove({}, function(err, portfolio_items){
+
 
     db.Portfolio_Item.create(portfolio_items, function(err, portfolio_items){
       if (err) { return console.log('ERROR', err); }
@@ -98,4 +50,4 @@ var portfolio_items = [
       process.exit();
     });
 
-  });
+  //});
