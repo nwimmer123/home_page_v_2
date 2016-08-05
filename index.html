@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
     <!-- APPLICATION SCRIPTS -->
     <script src="/js/app.js"></script>
@@ -89,6 +90,42 @@
         
         <p><a href="https://github.com/nwimmer123/david-excel">GitHub Link</a></p>
 
+    </div>
+
+    <div class="col-sm-6">
+      <script id="portfolio_items-template" type="text/x-handlebars-template">
+        {{#each portfolio_items}}
+          <h4>{{title}}</h4>
+        
+          <img src={{image}} class="portfolio_pic" id="test_pic">
+
+          <div id="test_text">
+            <p>{{description}}</p>
+            <p><strong>Languages:</strong>{{language}}</p>
+            <p><strong>Frameworks:</strong>{{framework}}</p>
+            <p><strong>Libraries:</strong>{{library}}</p>
+            <p><strong>Database:</strong>{{database}}</p>
+            <p><strong>Other:</strong> {{other}}</p>
+          </div>
+
+          <p><a href={{sitelink}}>Andersen Engineering</a></p>
+          
+          <p><a href={{githublink}}>GitHub Link</a></p>
+
+
+
+
+
+
+          <li class="list-group-item book" data-id="{{_id}}">
+            <img src={{image}} alt="Book Jacket" class="homepageImages">
+            <p><b>Contributor: </b>{{contributor}}</p>
+            <p><b>Title: </b>{{title}}</p>
+            <p><b>Author: </b>{{author}}</p>
+            <p><b>Genre: </b>{{genre}}</p>
+          </li>
+          {{/each}}
+      </script>
     </div>
 
 

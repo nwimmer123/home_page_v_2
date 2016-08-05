@@ -7,6 +7,14 @@ $(document).ready(function () {
   var source = $('#portfolio_items-template').html();
   var template = Handlebars.compile(source);
 
+  //get all database items
+
+  $.get(baseUrl, function (data) {
+    var dataHtml = template({ portfolio_items: data});
+    $("#portfolio_items-list").append(dataHtml);
+    console.log("other get!!");
+  });
+
   //reveal info about portfolio item
 
   $('#test_text').hide();
