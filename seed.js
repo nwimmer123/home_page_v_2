@@ -2,8 +2,6 @@ var db = require("./models");
 
 var portfolio_items = [
   {
-  textid: "0",
-  picid: "10",
   image: "/images/andersen.png",
   title: "Freelance Work",
   description: "Site for a structural engineer.",
@@ -17,8 +15,6 @@ var portfolio_items = [
   githublink: "https://github.com/nwimmer123/andersen-engineering",
   },
   {
-  textid: "1",
-  picid: "11",
   image: "/images/excel.png",
   title: "Freelance Work",
   description: "Site for an Excel consultant.",
@@ -32,10 +28,8 @@ var portfolio_items = [
   githublink: "https://github.com/nwimmer123/david-excel",
   },
   {
-  textid: "2",
-  picid: "12",
   image: "/images/read_it.png",
-  title: "Read It",
+  title: "Solo Project",
   description: "Friends can share and discuss their favorites books.",
   language: "JavaScript, HTML, CSS",
   framework: "Bootstrap, Node, Express",
@@ -45,6 +39,45 @@ var portfolio_items = [
   sitelink: "https://mysterious-basin-2931.herokuapp.com",
   sitename: "Read It",
   githublink: "https://github.com/nwimmer123/project-01",
+  },
+  {
+  image: "/images/adventures.png",
+  title: "Solo Project",
+  description: 'A user can play and create "Choose Your Own Adventure" stories.',
+  language: "Ruby, HTML, CSS",
+  framework: "Rails, Bootstrap",
+  library: "NA",
+  database: "PostgreSQL",
+  other: "Git",
+  sitelink: "https://adventure-creator.herokuapp.com",
+  sitename: "Adventure Creator",
+  githublink: "https://github.com/nwimmer123/Adventure_Creator",
+  },
+  {
+  image: "/images/share.png",
+  title: "Group Project",
+  description: "Allows neighbors to connect by sharing skills to accomplish tasks by trading skills rather than paying for services.",
+  language: "Ruby, HTML, CSS",
+  framework: "Rails, Bootstrap",
+  library: "NA",
+  database: "PostgreSQL",
+  other: "Git",
+  sitelink: "https://sharetastic.herokuapp.com",
+  sitename: "Sharetastic",
+  githublink: "https://github.com/kehontas/share",
+  },
+  {
+  image: "/images/vagabonder.png",
+  title: "Group Project",
+  description: "A web site to discuss your travels and favorite cities.",
+  language: "Ruby, HTML, CSS",
+  framework: "Rails, Bootstrap",
+  library: "NA",
+  database: "PostgreSQL",
+  other: "Git",
+  sitelink: "http://vagabonders.herokuapp.com",
+  sitename: "Vagabonder",
+  githublink: "https://github.com/bw-giraffe/project_vagabond",
   }
 
 ];
