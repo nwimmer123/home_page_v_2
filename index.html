@@ -79,31 +79,31 @@
     
     <div class="list-group" id="portfolio_items-list">
 
-        <script id="portfolio_items-template" type="text/x-handlebars-template">
-          {{#each portfolio_items}}
-          <div class="col-sm-6"> 
-            <h4>{{title}}</h4>
+      <script id="portfolio_items-template" type="text/x-handlebars-template">
+        {{#each portfolio_items}}
+        <div class="col-sm-6"> 
+          <h4>{{title}}</h4>
 
-            <div class="portfolio_container">
-              <img src={{image}} class="pic" id="pic{{picid}}">
+          <div class="portfolio_container">
+            <img src={{image}} class="pic">
 
-              <div class="text" id="text{{textid}}">
-                <p>{{description}}</p>
-                <p><strong>Languages: </strong>{{language}}</p>
-                <p><strong>Frameworks: </strong>{{framework}}</p>
-                <p><strong>Libraries: </strong>{{library}}</p>
-                <p><strong>Database: </strong>{{database}}</p>
-                <p><strong>Other: </strong> {{other}}</p>
-              </div>
-
-              <p><a href={{sitelink}}>{{sitename}}</a></p>
-              
-              <p><a href={{githublink}}>GitHub Link</a></p>
+            <div class="text">
+              <p>{{description}}</p>
+              <p><strong>Languages: </strong>{{language}}</p>
+              <p><strong>Frameworks: </strong>{{framework}}</p>
+              <p><strong>Libraries: </strong>{{library}}</p>
+              <p><strong>Database: </strong>{{database}}</p>
+              <p><strong>Other: </strong> {{other}}</p>
             </div>
           </div>
-          {{/each}}
+            <p><a href={{sitelink}}>{{sitename}}</a></p>
+            
+            <p><a href={{githublink}}>GitHub Link</a></p>
+          
+        </div>
+        {{/each}}
 
-        </script>
+      </script>
       
     </div>
 
