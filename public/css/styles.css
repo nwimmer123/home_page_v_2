@@ -67,7 +67,7 @@ footer {
 }
 
 .portfolio_container {
-  /*width:50%;*/
+  
   height:250px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
@@ -75,27 +75,26 @@ footer {
 }
 
 .portfolio_container:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .text {
   margin-top: -220px;
   min-height: 210px;
-  /*font-size: 2em;*/
   opacity: 0;
   transition: all .3s ease;
 }
 
 .portfolio_container:hover .text {
- opacity:1;
-
-/*#pic0 {
-  margin-top: -220px;
-  min-height: 210px
-
+ opacity: 1;
 }
 
-#text0 {
+.portfolio_container:hover .pic {
+ opacity: 0.2;
+}
+
+ .pic{
   max-height: 250px;
   border: medium groove #660033;
-}*/
+}
+

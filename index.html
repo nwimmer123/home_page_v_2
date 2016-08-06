@@ -74,25 +74,6 @@
     <h2 class="title">Portfolio</h2>
       <a name="portfolio"></a>
 
-      <!-- hardcoded example of how I want it to work-->
-
-      <div class="col-sm-6">
-
-        <h4>Freelance Work</h4>
-        
-        <img src="/images/andersen.png" class="portfolio_pic" id="test_pic">
-
-        <div id="test_text">
-          <p>Site for a structural engineer.</p>
-          <p><strong>Languages:</strong> JavaScript, HTML, CSS</p>
-          <p><strong>Other:</strong> Git, Bootstrap, GoDaddy Hosting</p>
-        </div>
-
-        <p><a href="https://andersen-engineering.com/">Andersen Engineering</a></p>
-        <p><a href="https://github.com/nwimmer123/david-excel">GitHub Link</a></p>
-
-      </div>
-
     <!-- Hanlebars template bringing in info I want -->
 
     
@@ -102,34 +83,29 @@
           {{#each portfolio_items}}
           <div class="col-sm-6"> 
             <h4>{{title}}</h4>
-          
-            <img src={{image}} class="portfolio_container" id="pic{{@index}}">
 
-            <div class="text" id="text{{@index}}">
-              <p>{{description}}</p>
-              <p><strong>Languages: </strong>{{language}}</p>
-              <p><strong>Frameworks: </strong>{{framework}}</p>
-              <p><strong>Libraries: </strong>{{library}}</p>
-              <p><strong>Database: </strong>{{database}}</p>
-              <p><strong>Other: </strong> {{other}}</p>
+            <div class="portfolio_container">
+              <img src={{image}} class="pic" id="pic{{picid}}">
+
+              <div class="text" id="text{{textid}}">
+                <p>{{description}}</p>
+                <p><strong>Languages: </strong>{{language}}</p>
+                <p><strong>Frameworks: </strong>{{framework}}</p>
+                <p><strong>Libraries: </strong>{{library}}</p>
+                <p><strong>Database: </strong>{{database}}</p>
+                <p><strong>Other: </strong> {{other}}</p>
+              </div>
+
+              <p><a href={{sitelink}}>{{sitename}}</a></p>
+              
+              <p><a href={{githublink}}>GitHub Link</a></p>
             </div>
-
-            <p><a href={{sitelink}}>{{sitename}}</a></p>
-            
-            <p><a href={{githublink}}>GitHub Link</a></p>
           </div>
           {{/each}}
 
         </script>
       
     </div>
-
-
-
-<!--     <div class="col-sm-6">
-      <img src="/images/excel.png" class="portfolio_pic">
-      <h4>Freelance Work</h4>
-    </div> -->
 
   </div>
 
