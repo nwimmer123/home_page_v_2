@@ -82,8 +82,6 @@ var portfolio_items = [
 
 ];
 
-  
-
 
     db.Portfolio_Item.create(portfolio_items, function(err, portfolio_items){
       if (err) { return console.log('ERROR', err); }
